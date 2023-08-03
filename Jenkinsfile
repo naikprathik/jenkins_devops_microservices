@@ -1,9 +1,9 @@
 pipelines{
-agent {docker{images'maven:3.6.3'}}
+agent {docker{images'Java:3.6.3'}}
 stages{
        stage('Build') {
        steps{
-             sh 'mvn --version'
+             sh 'Java --version'
              echo "Build"
 	     
 	       }
